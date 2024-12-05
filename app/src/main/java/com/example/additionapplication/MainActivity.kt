@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.fab.setOnClickListener { view ->
             var a =0;
-            CalculatorHelper.initCalculatorListener(object : CalculatorHelper.CalculatorI {
+         /*   CalculatorHelper.initCalculatorListener(object : CalculatorHelper.CalculatorI {
                 override fun getCalculatorInstance(calculatorListener: CalculatorListener) {
-                  a =  calculatorListener.addition(10, 20)
+                    a = CalculatorListener.addition(10, 20)
                 }
-            })
+            })*/
             Snackbar.make(view, "Result is $a", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()

@@ -1,4 +1,4 @@
-package com.example.additionapplication
+package com.example.mylibrary
 
 object CalculatorHelper {
   interface CalculatorI {

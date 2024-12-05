@@ -10,6 +10,12 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    plugins {
+        id("maven-publish")  // Correctly specify the plugin id
+    }
+
+
+
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -21,3 +27,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AdditionApplication"
 include(":app")
+include(":mylibrary")
