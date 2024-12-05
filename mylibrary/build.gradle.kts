@@ -27,8 +27,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -48,7 +48,7 @@ afterEvaluate {
     publishing {
         publications {
             create("myLibrary", MavenPublication::class.java) {
-                from(components["debug"])  // or use components["debug"] for a debug build
+                from(components["release"])  // or use components["debug"] for a debug build
                 groupId = "com.github.swethapriya18"
                 artifactId = "my-library"
                 version = "1.0.0"
