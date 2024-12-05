@@ -51,7 +51,7 @@ afterEvaluate {
                 from(components["release"])  // or use components["debug"] for a debug build
                 groupId = "com.github.swethapriya18"
                 artifactId = "my-library"
-                version = "1.0.0"
+                version = "1.0.4"
             }
         }
 
